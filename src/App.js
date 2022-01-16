@@ -20,7 +20,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}>
           </Route>
+          <Route path='/home' element={<Home/>}>
+          </Route>
           <Route path='/details/:playerdetails' element={<PlayerDetails/>}></Route>
+          <Route path='/home/details/:playerdetails' element={<PlayerDetails/>}></Route>
+          <Route path='/allplayers/details/:playerdetails' element={<PlayerDetails/>}></Route>
           <Route path='/allplayers' element={<AllPlayers/>}>
           </Route>
           <Route path="*" element={<NotFound/>}></Route>
